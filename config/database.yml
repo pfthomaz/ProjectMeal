@@ -11,7 +11,7 @@ default: &default
   password: admin
   host: localhost
   port: 3306
-  
+
 development:
   <<: *default
   database: projectmeal_dev

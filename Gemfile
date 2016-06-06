@@ -76,6 +76,7 @@ gem 'elastic-beanstalk'
 gem 'font-awesome-rails' # Font-awesome icon
 gem 'mail_form' #Forms, mail
 gem 'simple_form' #Forms, mail
+gem 'tzinfo-data'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
