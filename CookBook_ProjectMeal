@@ -5,5 +5,23 @@ $ rake db:create
 $ rake db:migrate
 $ rails generate simple_form:install --bootstrap
 $ rake routes
+
 Rails Tutorial 04 ERD Diagrams and Models
 $ rails generate model OrgCompany
+
+Rails Tutorial 05 Active Record Associations
+
+Rails Tutorial 06 Database Migrations
+$ rails generate migration test
+$ rails destroy migration test
+
+Rails Tutorial 07 Add Data to Tables from The Start Using
+$ rails g migration AddCountriesRegions
+$ rake db:migrate
+
+Rails Tutorial 08 Setting a Base
+
+Rails Tutorial 09 Creating a Header
+
+Rails Tutorial 10 Build a Footer
+
