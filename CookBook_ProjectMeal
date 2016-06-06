@@ -25,3 +25,7 @@ Rails Tutorial 09 Creating a Header
 
 Rails Tutorial 10 Build a Footer
 
+Rails Tutorial 11 Devise Installation and Migration
+$ rails g devise:install
+$ rails g devise OrgPerson
+$ rake db:migrate
