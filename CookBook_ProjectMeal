@@ -1,0 +1,9 @@
+Rails Tutorial 03 Routes and Controllers
+$ rails generate controller Catalogues
+resources :catalogues in routes.rb
+$ rake db:create
+$ rake db:migrate
+$ rails generate simple_form:install --bootstrap
+$ rake routes
+Rails Tutorial 04 ERD Diagrams and Models
+$ rails generate model OrgCompany
