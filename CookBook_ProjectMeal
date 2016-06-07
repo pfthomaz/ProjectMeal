@@ -41,3 +41,7 @@ $ rails g devise:controllers org_people
 
 Rails Tutorial 15 Devise Views
 $ rails g devise:views org_people
+
+Rails Tutorial 16 Devise Finale
+
+ails Tutorial 17 Dropdowns, Signin, Signout
