@@ -29,3 +29,5 @@ Rails Tutorial 11 Devise Installation and Migration
 $ rails g devise:install
 $ rails g devise OrgPerson
 $ rake db:migrate
+
+Rails Tutorial 12 Devise Configurations
