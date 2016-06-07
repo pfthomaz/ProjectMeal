@@ -7,7 +7,7 @@
 	  </div>
 	  <div class="col-md-12">
 	  	<div>
-		    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), placeholder: "E-mail", :class => "form-control"  %> 
+		    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), placeholder: "Email", :class => "form-control"  %> 
 		</div>
 
 		<div class="actions shared_links">
