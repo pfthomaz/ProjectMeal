@@ -12,8 +12,7 @@
       </div>
       <nav class="navbar-collapse bs-navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-<!--           <li><%#= link_to "Shopping Cart", carts_path %></li>
- -->
+<!--           <li><%#= link_to "Shopping Cart", carts_path %></li> -->
           <li><%= link_to "Shopping Cart", "#" %></li>
            <% if signed_in? %>
               <li class="dropdown">
@@ -25,7 +24,7 @@
                 </ul>
               </li>
             <% else %>
-              <li><%= link_to "Sign in", "#" %></li>
+              <li><%= link_to "Sign in", signin_path %></li>
           <% end %>
         </ul>
       </nav>

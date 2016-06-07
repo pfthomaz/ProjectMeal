@@ -38,3 +38,6 @@ devise_for an devise_scope
 
 Rails Tutorial 14 Devise Controllers
 $ rails g devise:controllers org_people
+
+Rails Tutorial 15 Devise Views
+$ rails g devise:views org_people
