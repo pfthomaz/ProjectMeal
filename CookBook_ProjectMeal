@@ -31,3 +31,10 @@ $ rails g devise OrgPerson
 $ rake db:migrate
 
 Rails Tutorial 12 Devise Configurations
+$ rails g devise:install
+
+Rails Tutorial 13 devise for and devise scope
+devise_for an devise_scope
+
+Rails Tutorial 14 Devise Controllers
+$ rails g devise:controllers org_people
