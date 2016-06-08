@@ -1,5 +1,6 @@
 class OrgCompaniesController < ApplicationController
-
+	before_action :signed_in_user, only: [:new]
+	
 	def new
 		signed_in_user #Be sure the user is signed in before he can create a company
 		@company = OrgCompany.new # Make new company object 
