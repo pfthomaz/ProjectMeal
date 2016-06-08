@@ -1,0 +1,2 @@
+class OrgPeopleController < ApplicationController
+end

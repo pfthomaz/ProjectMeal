@@ -48,3 +48,4 @@ Rails Tutorial 17 Dropdowns, Signin, Signout
 
 $ rails g controller org_people
 
+Rails Tutorial 18 Layouts and Dropdowns
