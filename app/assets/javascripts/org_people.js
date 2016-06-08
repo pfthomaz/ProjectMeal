@@ -70,7 +70,7 @@ $(document).ready(function() {
 	});
 });
 
-setupManaged = function() {
+/*setupManaged = function() {
 	var container, countrySelect, createButton, form, tosEl;
   	container = $('#stripe-managed');
 	if (container.length === 0) {
@@ -128,4 +128,4 @@ setupFieldsNeeded = function() {
       		}
     	}
   	});
-};
+};*/

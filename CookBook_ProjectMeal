@@ -53,3 +53,7 @@ Rails Tutorial 18 Layouts and Dropdowns
 Rails Tutorial 19 Edit Function and Edit Form
 
 Rails Tutorial 20 Font Awesome and Upload Javascript
+$ rake assets:precompile
+
+Rails Tutorial 21 Javascript and Update Contact Info
+
