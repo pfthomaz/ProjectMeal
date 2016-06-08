@@ -49,3 +49,7 @@ Rails Tutorial 17 Dropdowns, Signin, Signout
 $ rails g controller org_people
 
 Rails Tutorial 18 Layouts and Dropdowns
+
+Rails Tutorial 19 Edit Function and Edit Form
+
+Rails Tutorial 20 Font Awesome and Upload Javascript
