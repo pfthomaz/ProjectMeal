@@ -1,7 +1,7 @@
 <%= f.fields_for :org_contacts do |contact|%>
   
   <% if !@contactInfo["avatar"].blank? %>
-    <%#= image_tag @contactInfo.avatar_url(:medium).to_s, :class=>"profilePhoto" %>
+    <%= image_tag @contactInfo.avatar_url(:medium).to_s, :class=>"profilePhoto" %>
   <% end %>
   <div class="photoPreview">
     <i class="fa fa-upload photoUpload"></i>

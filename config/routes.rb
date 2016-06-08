@@ -73,4 +73,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  match '/org_register', to:'org_companies#new', via: 'get'
+
 end
