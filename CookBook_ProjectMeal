@@ -68,3 +68,6 @@ Rails Tutorial 27 New Company Registration Page
 Rails Tutorial 28 Companyfields and Layouts
 
 Rails Tutorial 30 Carrierwave, MiniMagick and Image Uploading
+$ rails generate uploader Avatar
+
+Rails Tutorial 31 Amazon S3 Image Uploading Finale
