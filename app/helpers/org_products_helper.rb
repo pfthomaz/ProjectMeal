@@ -1,0 +1,2 @@
+module OrgProductsHelper
+end
