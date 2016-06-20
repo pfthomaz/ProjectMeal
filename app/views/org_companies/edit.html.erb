@@ -3,7 +3,7 @@
 <% end %> 
 <div class="col-md-7 col-md-offset-3 main">
   	<% provide(:title, "Edit Company") %>
-  	<center><h1>Update <%= @company.name%></h1></center>
+  	<center><h1>Update <%= @company.name %></h1></center>
 	<%= form_for(@company) do |f|%>
 		<%= render 'shared/error_messages' %>
 		<div class="col-md-12 ">
@@ -15,7 +15,7 @@
 				<p id="uploadClick">Click to Upload</p>
 			</div>
 
-			<%= f.file_field :avatar, accept: 'image/png,image/gif,image/jpeg, image/jpg', id: 'uploadCompanyAvatar'%>
+			<%= f.file_field :avatar, accept: 'image/png, image/gif, image/jpeg, image/jpg', id: 'uploadCompanyAvatar'%>
 			<p class="deleteCompanyPhoto">Delete</p>
 
 			<%= render 'layouts/companyfields', f: f%>

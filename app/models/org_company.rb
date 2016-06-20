@@ -9,6 +9,6 @@ class OrgCompany < ActiveRecord::Base
 	accepts_nested_attributes_for :typ_company
 	accepts_nested_attributes_for :org_contacts
 	accepts_nested_attributes_for :typ_fee
-	
+
 	mount_uploader :avatar, AvatarUploader
 end
