@@ -71,3 +71,12 @@ Rails Tutorial 30 Carrierwave, MiniMagick and Image Uploading
 $ rails generate uploader Avatar
 
 Rails Tutorial 31 Amazon S3 Image Uploading Finale
+
+Rails Tutorial 46 Remove From Company
+
+Rails Tutorial 47 Products
+$ rails g controller org_products
+
+Rails Tutorial 48 New Products Pt 1
+
+Rails Tutorial 53 Elasticsearch
