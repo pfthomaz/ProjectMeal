@@ -1,1 +1,75 @@
-<p>Catalogues index.html.erb view</p>
+<div class="col-md-6 col-md-push-3 form-margins">
+  <%= provide(:title, "Search")%>
+  <center><h1>Search For Food or Grocer</h1></center>
+  <%= form_tag root_path, :class => "input-group", :method => :get do %>
+    <%= text_field_tag :search, params[:search], :class => "form-control" %>
+    <span class="input-group-btn">
+      <%= submit_tag "Search", :name => nil, :class => "btn btn-default" %>
+    </span>
+  <% end %>
+</div>
+
+<div class="col-md-10 col-md-offset-1 main">
+  <% if @org_products.empty? %>
+  <% else %> 
+    <%= will_paginate @query, renderer: BootstrapPagination::Rails %>
+      <ul class="catalogue">
+        <% @org_products.each do |product| %>
+        <li>
+          <div class="row">
+            <div class="col-md-2 prodImage">
+              <% if !product["image"].blank? %>
+                <%= image_tag product.image_url(:medium).to_s, :class => "displayImage"%>
+              <% else %>
+                <div class="displayImage">
+                  <i class="fa fa-question-circle photoUpload"></i>
+                  <p>Picture Unavailable</p>
+                </div>
+              <% end %>
+            </div>
+            <div class="col-md-8" id="prodInfo">
+              <h4 id="title"><%= link_to product.name, product %></h4>
+              <span><%= hidden_field_tag 'id', product.id %></span>
+              <span><%= hidden_field_tag 'tax', product.tax_amount %></span>
+              <div class="price">Price: <%= @currency.symbol %><span><%= number_with_precision(product.price, precision: 2)%></span></div>
+              <div class="grocer">Grocer: <span><%= link_to product.org_company.name, org_companies_company_profile_path(product.org_company.id)%></span></div>
+              <% if product.weight_in_grams != 0%>
+                <div id="wig">Grams Per Item: <span><%= product.weight_in_grams %></span> grams or <%= number_with_precision((product.weight_in_grams/1000.00), precision: 2)%> kg</div>
+              <% else %>
+                <div id="wig" class="hidden">Grams Per Item: <span><%= product.weight_in_grams %></span> grams</div>
+              <% end %>
+              <% if product.available_quantity > 150 %>
+                <div id="aq" class="hidden">Approx. Available Quantity: <span><%= product.available_quantity %></span></div>
+              <% else %>
+                <div id="aq">Approx. Available Quantity: <span><%= product.available_quantity %></span></div>
+              <% end %>
+              <% if product.expiry_date.to_date < (Date.today + 60.days) %>
+                <div class="expiry">Expiry Date: <i><%= product.expiry_date.to_date.to_formatted_s(:long_ordinal) %></i></div>
+              <% else %>
+                <div class="expiry hidden">Expiry Date: <i><%= product.expiry_date.to_date.to_formatted_s(:long_ordinal) %></i></div>
+              <% end %>
+            </div>
+            <% if product.online_order_available == true %>
+              <div class="col-md-2 quantity-box">
+                <%= render :partial => "layouts/additem", locals: {product: product, page: "catalogue_index"}%>
+              </div>
+            <% end %>
+            <% if current_org_person %>
+              <% if product.online_order_available == true %>
+                <div class="btn-group col-sm-9 col-md-offset-2 vote-buttons">
+                  <%= render :partial => "layouts/votebuttons", locals: {product: product} %>
+              <% else %>
+                <div class="btn-group col-sm-2 quantity-box">
+                  <div class="btn-group col-sm-9 col-md-offset-2 vote-buttons">
+                    <%= render :partial => "layouts/votebuttons", locals: {product: product} %>
+                  </div>
+              <% end %>
+              </div>
+            <% end %>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+      <%= will_paginate @query, renderer: BootstrapPagination::Rails %>
+  <% end %>
+</div>
