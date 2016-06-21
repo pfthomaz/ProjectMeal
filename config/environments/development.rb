@@ -56,3 +56,9 @@ Rails.application.configure do
   }
 
 end
+
+# class ActionDispatch::Request
+#   def ip
+#     "24.84.255.123"
+#   end
+# end
