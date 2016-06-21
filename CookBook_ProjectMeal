@@ -80,3 +80,8 @@ $ rails g controller org_products
 Rails Tutorial 48 New Products Pt 1
 
 Rails Tutorial 53 Elasticsearch
+
+Rails Tutorial 60 Catalogue Pt 1 of 2
+$ rails g controller catalogues --no-helper --no-test-framework
+
+Rails Tutorial 61 Catalogue Pt 2 of 2
