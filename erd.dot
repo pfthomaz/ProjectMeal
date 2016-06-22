@@ -1,0 +1,325 @@
+digraph ProjectMeal {
+rankdir = "LR";
+ranksep = "0.5";
+nodesep = "0.4";
+pad = "0.4,0.4";
+margin = "0,0";
+concentrate = "true";
+labelloc = "t";
+fontsize = "13";
+fontname = "Arial Bold";
+node[ shape  =  "Mrecord" , fontsize  =  "10" , fontname  =  "Arial" , margin  =  "0.07,0.05" , penwidth  =  "1.0"];
+edge[ fontname  =  "Arial" , fontsize  =  "7" , dir  =  "both" , arrowsize  =  "0.9" , penwidth  =  "1.0" , labelangle  =  "32" , labeldistance  =  "1.8"];
+rankdir = "TB";
+label = "ProjectMeal domain model\n\n";
+"m_ActsAsVotable::Vote" [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">ActsAsVotable::Vote</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="votable_type">votable_type <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="vote_flag">vote_flag <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="vote_scope">vote_scope <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="vote_weight">vote_weight <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="voter_type">voter_type <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_Cart [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">Cart</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="expiry_date">expiry_date <font face="Arial Italic" color="grey60">datetime ∗</font></td></tr>
+  <tr><td align="left" width="130" port="grocer">grocer <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="org_person_id">org_person_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="price">price <font face="Arial Italic" color="grey60">decimal (5,2) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="quantity">quantity <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="tax_amount">tax_amount <font face="Arial Italic" color="grey60">float (24)</font></td></tr>
+  <tr><td align="left" width="130" port="weight_in_grams">weight_in_grams <font face="Arial Italic" color="grey60">decimal (10,0) ∗</font></td></tr>
+</table>
+>];
+m_OrgCompany [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">OrgCompany</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="avatar">avatar <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">text (65535)</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="typ_fee_id">typ_fee_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="verification_doc">verification_doc <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="verified">verified <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+</table>
+>];
+m_OrgContact [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">OrgContact</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="address1">address1 <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="address2">address2 <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="avatar">avatar <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="business_number">business_number <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="cell_number">cell_number <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="city">city <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="email">email <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="latitude">latitude <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="longitude">longitude <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="postal_code">postal_code <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+m_OrgPerson [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">OrgPerson</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="confirmation_sent_at">confirmation_sent_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="confirmation_token">confirmation_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="confirmed_at">confirmed_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="current_sign_in_at">current_sign_in_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="current_sign_in_ip">current_sign_in_ip <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="email">email <font face="Arial Italic" color="grey60">string ∗ U</font></td></tr>
+  <tr><td align="left" width="130" port="encrypted_password">encrypted_password <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="first_name">first_name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="last_name">last_name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="last_sign_in_at">last_sign_in_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="last_sign_in_ip">last_sign_in_ip <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="remember_created_at">remember_created_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="reset_password_sent_at">reset_password_sent_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="reset_password_token">reset_password_token <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="sign_in_count">sign_in_count <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="stripe_account_status">stripe_account_status <font face="Arial Italic" color="grey60">text (65535)</font></td></tr>
+  <tr><td align="left" width="130" port="stripe_account_type">stripe_account_type <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="stripe_currency">stripe_currency <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="stripe_publishable_key">stripe_publishable_key <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="stripe_secret_key">stripe_secret_key <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="stripe_user_id">stripe_user_id <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="unconfirmed_email">unconfirmed_email <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_OrgProduct [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">OrgProduct</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="available_quantity">available_quantity <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">text (65535) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="expiry_date">expiry_date <font face="Arial Italic" color="grey60">datetime ∗</font></td></tr>
+  <tr><td align="left" width="130" port="image">image <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="latitude">latitude <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="longitude">longitude <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="online_order_available">online_order_available <font face="Arial Italic" color="grey60">boolean ∗</font></td></tr>
+  <tr><td align="left" width="130" port="price">price <font face="Arial Italic" color="grey60">decimal (5,2) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="tax_amount">tax_amount <font face="Arial Italic" color="grey60">float (24)</font></td></tr>
+  <tr><td align="left" width="130" port="weight_in_grams">weight_in_grams <font face="Arial Italic" color="grey60">decimal (10,0) ∗</font></td></tr>
+</table>
+>];
+m_PreferredDeliverer [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">PreferredDeliverer</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="deliverer_id">deliverer_id <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="supplier_id">supplier_id <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+</table>
+>];
+m_ShippingAddress [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">ShippingAddress</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="address1">address1 <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="address2">address2 <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="city">city <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="country">country <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">text (65535)</font></td></tr>
+  <tr><td align="left" width="130" port="email">email <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="first_name">first_name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="last_name">last_name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="postal_code">postal_code <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="region">region <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="telephone">telephone <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_StripeTransaction [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">StripeTransaction</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="currency">currency <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="notification_params">notification_params <font face="Arial Italic" color="grey60">text (65535)</font></td></tr>
+  <tr><td align="left" width="130" port="status">status <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="tax_amount">tax_amount <font face="Arial Italic" color="grey60">decimal (20,4)</font></td></tr>
+  <tr><td align="left" width="130" port="total_amount">total_amount <font face="Arial Italic" color="grey60">decimal (20,4)</font></td></tr>
+  <tr><td align="left" width="130" port="txn_id">txn_id <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="txn_type">txn_type <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_TrxOrder [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TrxOrder</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="org_company_id">org_company_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+  <tr><td align="left" width="130" port="purchased_at">purchased_at <font face="Arial Italic" color="grey60">datetime</font></td></tr>
+  <tr><td align="left" width="130" port="total_amount">total_amount <font face="Arial Italic" color="grey60">decimal (20,4)</font></td></tr>
+  <tr><td align="left" width="130" port="transport_method">transport_method <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="trx_order_fee_id">trx_order_fee_id <font face="Arial Italic" color="grey60">integer</font></td></tr>
+</table>
+>];
+m_TrxOrderFee [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TrxOrderFee</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="fee_amount">fee_amount <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+</table>
+>];
+m_TrxOrderItem [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TrxOrderItem</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="available_quantity">available_quantity <font face="Arial Italic" color="grey60">decimal (10,0) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="delivery_status">delivery_status <font face="Arial Italic" color="grey60">boolean</font></td></tr>
+  <tr><td align="left" width="130" port="description">description <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="expiry_date">expiry_date <font face="Arial Italic" color="grey60">datetime ∗</font></td></tr>
+  <tr><td align="left" width="130" port="image">image <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+  <tr><td align="left" width="130" port="net_amount">net_amount <font face="Arial Italic" color="grey60">decimal (20,4)</font></td></tr>
+  <tr><td align="left" width="130" port="price">price <font face="Arial Italic" color="grey60">decimal (20,4) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="quantity">quantity <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="tax_amount">tax_amount <font face="Arial Italic" color="grey60">decimal (20,4)</font></td></tr>
+  <tr><td align="left" width="130" port="typ_category_id">typ_category_id <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="typ_subcategory_id">typ_subcategory_id <font face="Arial Italic" color="grey60">integer ∗</font></td></tr>
+  <tr><td align="left" width="130" port="weight_in_grams">weight_in_grams <font face="Arial Italic" color="grey60">decimal (10,0) ∗</font></td></tr>
+</table>
+>];
+m_TypCategory [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypCategory</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+m_TypCompany [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypCompany</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+m_TypContact [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypContact</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+m_TypCountry [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypCountry</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="continent">continent <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="country">country <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="currency_code">currency_code <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="currency_name">currency_name <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="fips">fips <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="geonameid">geonameid <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="iso">iso <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="iso3">iso3 <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="languages">languages <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="phone_prefix">phone_prefix <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="postal_code">postal_code <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_TypFee [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypFee</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="fee_percentage">fee_percentage <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+m_TypPosition [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypPosition</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+m_TypRegion [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypRegion</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string</font></td></tr>
+  <tr><td align="left" width="130" port="timezone">timezone <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_TypSalesTax [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypSalesTax</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="tax_rate">tax_rate <font face="Arial Italic" color="grey60">float (24) ∗</font></td></tr>
+</table>
+>];
+m_TypSubcategory [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypSubcategory</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string</font></td></tr>
+</table>
+>];
+m_TypTax [label = <<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+  <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">TypTax</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+  <tr><td align="left" width="130" port="name">name <font face="Arial Italic" color="grey60">string ∗</font></td></tr>
+</table>
+>];
+  m_OrgProduct -> "m_ActsAsVotable::Vote" [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_OrgPerson -> "m_ActsAsVotable::Vote" [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_OrgPerson -> m_OrgContact [arrowhead = "normal", arrowtail = "normal", weight = "1"];
+  m_OrgCompany -> m_OrgPerson [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypPosition -> m_OrgPerson [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_Cart -> m_OrgPerson [arrowhead = "none", arrowtail = "none", weight = "1"];
+  m_OrgProduct -> m_Cart [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_OrgCompany -> m_OrgContact [arrowhead = "normal", arrowtail = "normal", weight = "1"];
+  m_OrgCompany -> m_OrgProduct [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_OrgCompany -> m_TypFee [arrowhead = "none", arrowtail = "none", weight = "1"];
+  m_TypCompany -> m_OrgCompany [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_OrgPerson -> m_OrgContact [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_OrgCompany -> m_OrgContact [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_TypContact -> m_OrgContact [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypCountry -> m_OrgContact [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypRegion -> m_OrgContact [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypCategory -> m_OrgProduct [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypSubcategory -> m_OrgProduct [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TrxOrder -> m_ShippingAddress [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_ShippingAddress -> m_TrxOrderItem [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TrxOrder -> m_StripeTransaction [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TrxOrder -> m_TrxOrderItem [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TrxOrder -> m_TrxOrderFee [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_OrgContact -> m_TrxOrder [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_ShippingAddress -> m_TrxOrder [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_OrgCompany -> m_TrxOrderItem [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_OrgProduct -> m_TrxOrderItem [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_TypCategory -> m_TypSubcategory [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypCountry -> m_TypRegion [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypFee -> m_TrxOrderFee [arrowhead = "normal", arrowtail = "none", weight = "1"];
+  m_TypRegion -> m_TypSalesTax [arrowhead = "normal", arrowtail = "none", weight = "2"];
+  m_TypTax -> m_TypSalesTax [arrowhead = "normal", arrowtail = "none", weight = "2"];
+}
