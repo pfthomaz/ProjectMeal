@@ -99,3 +99,16 @@ Rails Tutorial 66 Company Profile
 Rails Tutorial 67 Add an Item Pt 1
 
 Rails Tutorial 68 Add an Item Pt 2
+
+Rails Tutorial 69 Voting System Pt 1
+
+Rails Tutorial 70 Voting System Pt 2
+
+Rails Tutorial 71 Voting System Finale
+
+Rails Tutorial 72 Products Show
+
+Rails Tutorial 73 Products Controller Show
+
+Rails Tutorial 74 Adding to the Cart
+$ rails g controller Carts --no-helper --no-test-framework

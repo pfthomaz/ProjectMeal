@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails ProjectMeal: test" uuid="dbc33b3b-a3aa-4e07-baec-7c4da49475f6">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails ProjectMeal: development" uuid="a22dfc88-c9ed-4947-a3f3-78e712c7a74f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails ProjectMeal: production" uuid="e1845427-b5b0-4dd1-ae20-d9a4e354f4c2">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails ProjectMeal: default" uuid="5704e103-f946-409f-8584-2d00e0cfa3b8">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

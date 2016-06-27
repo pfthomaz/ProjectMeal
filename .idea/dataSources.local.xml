@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ProjectMeal: test" uuid="dbc33b3b-a3aa-4e07-baec-7c4da49475f6">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+    </data-source>
+    <data-source name="Rails ProjectMeal: development" uuid="a22dfc88-c9ed-4947-a3f3-78e712c7a74f">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+    </data-source>
+    <data-source name="Rails ProjectMeal: production" uuid="e1845427-b5b0-4dd1-ae20-d9a4e354f4c2">
+      <first-sync>true</first-sync>
+      <user-name>&lt;%= ENV['RDS_USERNAME_NAME'] %&gt;</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff8dfeedff9dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails ProjectMeal: default" uuid="5704e103-f946-409f-8584-2d00e0cfa3b8">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>dfcbdfcedfc7dfc3dfc4</user-password>
+    </data-source>
+  </component>
+</project>
