@@ -112,3 +112,8 @@ Rails Tutorial 73 Products Controller Show
 
 Rails Tutorial 74 Adding to the Cart
 $ rails g controller Carts --no-helper --no-test-framework
+
+Rails Tutorial 75 Carts
+
+Rails Tutorial 76 Carts Index View Pt 1
+
