@@ -123,4 +123,6 @@ Rails Tutorial 77 Carts Index View Pt 2
 Rails Tutorial 78 Remove Item from a Cart
 $ rails g controller trx_orders --no-helper --no-test-framework
 
+Rails Tutorial 79 Carts Wrap up, Orders Set up!
+
 
