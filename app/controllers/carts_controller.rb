@@ -1,7 +1,7 @@
 class CartsController < ApplicationController
-
+	# Shows all the items client has ordered in the shopping cart
 	def index
-		@org_products = Array.new # Empty array
+		@org_products = Array.new
 		@currency = Money.new(1, session[:currency]["iso_code"]).currency
 		# If the session delivery method is nil, default to pickup
 		if session[:delivery_method].nil?
@@ -70,11 +70,14 @@ class CartsController < ApplicationController
 	def add
 		# cart_item – try to find the item in the db if it exists
 		if current_org_person
-			cart_item = Cart.find_by_id(org_person_id: current_org_person.id, org_product_id: params[:product_id])
-		end
+			cart_item = Cart.find_by(org_person_id: current_org_person.id, org_product_id: params[:product_id])
+      #raise current_org_person.inspect
+      #raise Cart.inspect
+      Rails.logger.debug params.inspect
+    end
 		# It doesn't exist, and the user is logged on, create it for this user in the db.
 		if cart_item.blank? && current_org_person
-			cart_item = Cart.create(org_person_id: current_org_person_id,
+			cart_item = Cart.create(org_person_id: current_org_person.id,
 															org_product_id: params[:product_id],
 															name: params[:title],
 															tax_amount: params[:tax],
@@ -90,10 +93,11 @@ class CartsController < ApplicationController
 											 price: params[:price],
 											 grocer: params[:grocer],
 											 quantity: params[:quantity],
-											 weight_in_grams: params[:weight])
+											 weight_in_grams: params[:weight],
+											 expiry_date: params[:expiry])
 			# The user is not logged on, so we use sessions
 		else
-			session[:cart] ||= {}
+			session[:cart] ||={}
 			session[:cart][params[:product_id]] = {id: params[:product_id],
 																						 title: params[:title],
 																						 tax_amount: params[:tax],
@@ -102,8 +106,25 @@ class CartsController < ApplicationController
 																						 quantity: params[:quantity],
 																						 weight: params[:weight],
 																						 expiry: params[:expiry]
+
 			}
 		end
 		render nothing:true
+	end
+
+	def add_delivery_method
+		session[:delivery_method] = nil
+		session[:delivery_method] = params[:deliveryMode]
+		render nothing:true
+	end
+
+	def destroy
+		# Delete the item from the cart
+		if current_org_person
+			Cart.destroy(params[:id])
+		else
+			session[:cart].delete(params[:id])
+		end
+		redirect_to carts_path # Redirect to the shopping cart
 	end
 end
