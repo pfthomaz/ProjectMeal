@@ -19,7 +19,6 @@ class TrxOrdersController < ApplicationController
                       quantity: c[1]["quantity"],
                       weight_in_grams: c[1]["weight"],
                       expiry_date: c[1]["expiry"])
-
         end
       end
     end
