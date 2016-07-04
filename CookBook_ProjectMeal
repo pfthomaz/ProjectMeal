@@ -141,5 +141,9 @@ Rails Tutorial 85 Get Total Tax
 
 Rails Tutorial 86 Orders View
 
+Rails Tutorial 87 Setting up Stripe Foundations
+$ rails g controller Stripe
+
+
 
 
