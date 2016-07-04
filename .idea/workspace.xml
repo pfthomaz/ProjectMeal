@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88d64100-3dad-4f99-97d3-87c65134128a" name="Default" comment="Rails Tutorial 86 Orders View">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/services/stripe_managed.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/stripe.rb" />
+    <list default="true" id="88d64100-3dad-4f99-97d3-87c65134128a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CookBook_ProjectMeal" afterPath="$PROJECT_DIR$/CookBook_ProjectMeal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" />
     </list>
     <ignored path="ProjectMeal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -607,7 +603,7 @@
       <updated>1466787811620</updated>
       <workItem from="1466787813827" duration="47000" />
       <workItem from="1467021328480" duration="2945000" />
-      <workItem from="1467024292785" duration="37456000" />
+      <workItem from="1467024292785" duration="37513000" />
     </task>
     <task id="LOCAL-00001" summary="Rails Tutorial 74 Adding to the Cart">
       <created>1467041513088</created>
@@ -672,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467395289855</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Rails Tutorial 87 Setting up Stripe Foundations">
+      <created>1467621064696</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1467621064696</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40448000" />
+    <option name="totallyTimeSpent" value="40505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1375" y="278" width="1364" height="738" extended-state="0" />
@@ -721,7 +724,8 @@
     <MESSAGE value="Rails Tutorial 80 Orders" />
     <MESSAGE value="Rails Tutorial 82 Stripe Vendor Charges" />
     <MESSAGE value="Rails Tutorial 86 Orders View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rails Tutorial 86 Orders View" />
+    <MESSAGE value="Rails Tutorial 87 Setting up Stripe Foundations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rails Tutorial 87 Setting up Stripe Foundations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
