@@ -34,8 +34,8 @@
 					<ul class="list-group">
 						<% if @manager.needs?('bank_account')%>
 							<li class="list-group-item" id="bank-account" data-publishable=<%= current_org_person.stripe_publishable_key%>>
-								<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-								<h3>Bank Account</h3>
+                <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+                <h3>Bank Account</h3>
 								<%= hidden_field_tag :bank_account_token %>
 								<%= hidden_field_tag :currency, current_org_person.stripe_currency, :data => {:stripe => 'currency'} %>
 								<div class="form-group">

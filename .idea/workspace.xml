@@ -4,7 +4,7 @@
     <list default="true" id="88d64100-3dad-4f99-97d3-87c65134128a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CookBook_ProjectMeal" afterPath="$PROJECT_DIR$/CookBook_ProjectMeal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/org_person.rb" afterPath="$PROJECT_DIR$/app/models/org_person.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_stripeSettings.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_stripeSettings.html.erb" />
     </list>
     <ignored path="ProjectMeal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="CookBook_ProjectMeal" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CookBook_ProjectMeal">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
+            <state relative-caret-position="566">
+              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,8 +84,8 @@
       <file leaf-file-name="_stripeSettings.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_stripeSettings.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            <state relative-caret-position="423">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,8 +163,9 @@
         <option value="$PROJECT_DIR$/app/controllers/org_people_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/org_people/stripe_settings.html.erb" />
         <option value="$PROJECT_DIR$/app/models/org_person.rb" />
-        <option value="$PROJECT_DIR$/CookBook_ProjectMeal" />
         <option value="$PROJECT_DIR$/app/controllers/hooks_controller.rb" />
+        <option value="$PROJECT_DIR$/CookBook_ProjectMeal" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_stripeSettings.html.erb" />
       </list>
     </option>
   </component>
@@ -662,7 +663,7 @@
       <updated>1466787811620</updated>
       <workItem from="1466787813827" duration="47000" />
       <workItem from="1467021328480" duration="2945000" />
-      <workItem from="1467024292785" duration="42316000" />
+      <workItem from="1467024292785" duration="43441000" />
     </task>
     <task id="LOCAL-00001" summary="Rails Tutorial 74 Adding to the Cart">
       <created>1467041513088</created>
@@ -748,11 +749,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467628531600</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Rails Tutorial 90 Stripe Managed">
+      <created>1467629408199</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1467629408199</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45308000" />
+    <option name="totallyTimeSpent" value="46433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1375" y="269" width="1364" height="747" extended-state="0" />
@@ -799,7 +807,8 @@
     <MESSAGE value="Rails Tutorial 86 Orders View" />
     <MESSAGE value="Rails Tutorial 87 Setting up Stripe Foundations" />
     <MESSAGE value="Rails Tutorial 89 Stripe Connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rails Tutorial 89 Stripe Connected" />
+    <MESSAGE value="Rails Tutorial 90 Stripe Managed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rails Tutorial 90 Stripe Managed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,14 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/org_people/stripe_settings.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/org_people_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1052,18 +1053,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CookBook_ProjectMeal">
+    <entry file="file://$PROJECT_DIR$/app/controllers/stripe_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
+        <state relative-caret-position="120">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/hooks_controller.rb">
+    <entry file="file://$PROJECT_DIR$/CookBook_ProjectMeal">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state relative-caret-position="566">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1076,18 +1077,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/stripe_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/org_people/stripe_settings.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="100">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/hooks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_stripeSettings.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="423">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
       </provider>

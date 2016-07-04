@@ -151,6 +151,10 @@ Rails Tutorial 89 Stripe Connected
 Rails Tutorial 90 Stripe Managed
 $ rails g controller hooks
 
+Rails Tutorial 91 Stripe Settings View
+
+
+
 
 
 
