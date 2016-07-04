@@ -9,7 +9,6 @@ class OrgPeopleController < ApplicationController
 		@contactInfo[:email] = current_org_person.email
 		@person.org_contacts.build(@contactInfo.attributes)
 	end
-
 	def update
 		# Create org_ca to sanitize our hash to proper "contacts" attributes
 		@org_ca = update_person_params["org_contacts_attributes"]["0"]
@@ -43,7 +42,6 @@ class OrgPeopleController < ApplicationController
 	        render :edit
 		end
 	end
-
 	# Edits a position/role (i.e. COO, Director, Store Manager, etc.)
 	def edit_position
 		person_info = OrgPerson.find_by_id(params[:id])
@@ -79,7 +77,6 @@ class OrgPeopleController < ApplicationController
         	:city, {typ_countries: :id}, {typ_regions: :id}, {org_company: :id}, :postal_code, :email, 
         	:business_number, :cell_number, :org_person_id, :avatar])
 		end
-
 		# Before filters
 
 	    def signed_in_user
@@ -88,7 +85,6 @@ class OrgPeopleController < ApplicationController
 	        redirect_to signin_url, flash: {warning: "Please sign in."}
 	      end
 	    end
-
 	    # Checks to see if the current user is actually the user this page is suppose to show
     	# We don't want a person to type in the user of someone else in the link and edit their info
 	    def correct_user
