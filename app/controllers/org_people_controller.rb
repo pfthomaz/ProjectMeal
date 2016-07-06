@@ -1,6 +1,6 @@
 class OrgPeopleController < ApplicationController
 	before_action :signed_in_user, only: [:edit, :update, :stripe_settings]
-  	before_action :correct_user,   only: [:edit, :update]
+	before_action :correct_user,   only: [:edit, :update]
 
 	def edit
 		# All the setup that is needed to build the edit page view

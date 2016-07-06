@@ -1,8 +1,9 @@
 class StripeManaged < Struct.new( :org_person )
-  ALLOWED = [ 'US', 'CA' ] # public beta
+  ALLOWED = [ 'US', 'CA', 'PT' ] # public beta
   COUNTRIES = [
       { name: 'United States', code: 'US' },
-      { name: 'Canada', code: 'CA' }
+      { name: 'Canada', code: 'CA' },
+      { name: 'Portugal', code: 'PT' }
   # { name: 'Australia', code: 'AU' },
   # { name: 'United Kingdom', code: 'GB' },
   # { name: 'Ireland', code: 'IE' }
@@ -46,7 +47,7 @@ class StripeManaged < Struct.new( :org_person )
   def update_account!( params: nil )
     if params
       if params[:bank_account_token]
-        account.bank_account = params[:bank_account_token]
+        account.external_account = params[:bank_account_token]
         account.save
       end
 
@@ -77,7 +78,6 @@ class StripeManaged < Struct.new( :org_person )
         # copy 'address' as 'personal_address'
         pa = account.legal_entity['address'].dup.to_h
         account.legal_entity['personal_address'] = pa
-
         account.save
       end
     end
@@ -101,6 +101,7 @@ class StripeManaged < Struct.new( :org_person )
                       when 'CA' then %w{ US CA }
                       when 'IE', 'UK' then %w{ IE UK US }
                       when 'AU' then %w{ AU }
+                      when 'PT' then %w{ PT }
                     end
     COUNTRIES.select do |country|
       country[:code].in? country_codes
