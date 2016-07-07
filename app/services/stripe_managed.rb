@@ -1,12 +1,12 @@
 class StripeManaged < Struct.new( :org_person )
-  ALLOWED = [ 'US', 'CA', 'PT' ] # public beta
+  ALLOWED = [ 'US', 'CA', 'PT', 'AU', 'GB', 'IE' ] # public beta
   COUNTRIES = [
       { name: 'United States', code: 'US' },
       { name: 'Canada', code: 'CA' },
-      { name: 'Portugal', code: 'PT' }
-  # { name: 'Australia', code: 'AU' },
-  # { name: 'United Kingdom', code: 'GB' },
-  # { name: 'Ireland', code: 'IE' }
+      { name: 'Portugal', code: 'PT' },
+      { name: 'Australia', code: 'AU' },
+      { name: 'United Kingdom', code: 'GB' },
+      { name: 'Ireland', code: 'IE' }
   ]
 
   def create_account!( country, tos_accepted, ip )
@@ -64,13 +64,13 @@ class StripeManaged < Struct.new( :org_person )
           if [ :address, :dob ].include? key.to_sym
             value.entries.each do |akey, avalue|
               next if avalue.blank?
-              # Rails.logger.error "#{akey} - #{avalue.inspect}"
+              Rails.logger.error "#{akey} - #{avalue.inspect}"
               account.legal_entity[key] ||= {}
               account.legal_entity[key][akey] = avalue
             end
           else
             next if value.blank?
-            # Rails.logger.error "#{key} - #{value.inspect}"
+            Rails.logger.error "#{key} - #{value.inspect}"
             account.legal_entity[key] = value
           end
         end
